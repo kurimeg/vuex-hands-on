@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-    class="icon-toggle"
+    class="toggle-icon"
     src="@/assets/images/search_icon.png"
     @click="visible = !visible"
     >
@@ -27,7 +27,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .icon-toggle {
+  .toggle-icon {
     z-index: 2;
     position: absolute;
     width: 50px;
