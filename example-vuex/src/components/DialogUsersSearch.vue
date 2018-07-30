@@ -1,14 +1,14 @@
 <template>
   <div>
     <img
-    class="icon"
+    class="icon-toggle"
     src="@/assets/images/search_icon.png"
     @click="visible = !visible"
     >
-    <div class="dialog-search" v-if="visible">
-      <div class="header">検索</div>
-      <img src="@/assets/images/search_button.png" class="icon-search">
-      <input type="text" class="input" inputmode="kana">
+    <div class="search" v-if="visible">
+      <div class="search-header">検索</div>
+      <img src="@/assets/images/search_button.png" class="search-icon">
+      <input type="text" class="search-input" inputmode="kana">
       <div class="message">メッセージ</div>
       <div class="message">メッセージ</div>
     </div>
@@ -27,15 +27,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .dialog-search {
-    overflow: hidden;
-    width: 400px;
-    border: 5px solid #28a1f7;
-    border-radius: 15px;
-    background-color: #5d5d5d;
-    padding-bottom: 15px;
-  }
-  .icon {
+  .icon-toggle {
     z-index: 2;
     position: absolute;
     width: 50px;
@@ -44,13 +36,21 @@ export default {
     margin-top: 3px;
     cursor: pointer;
   }
-  .header {
+  .search {
+    overflow: hidden;
+    width: 400px;
+    border: 5px solid #28a1f7;
+    border-radius: 15px;
+    background-color: #5d5d5d;
+    padding-bottom: 15px;
+  }
+  .search-header {
     margin-top: 5px;
     margin-left: 53px;
     color: #ffffff;
     font-size: 20px;
   }
-  .input {
+  .search-input {
     margin-top: 10px;
     margin-left: 30px;
     width: 330px;
@@ -64,7 +64,7 @@ export default {
     border-style: none;
     ime-mode: active;
   }
-  .icon-search {
+  .search-icon {
     position: absolute;
     margin-left: 35px;
     margin-top: 13px;
