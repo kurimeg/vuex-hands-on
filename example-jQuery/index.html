@@ -8,15 +8,13 @@
     <script src="./js/index.js"></script>
   </head>
   <body>
-    <img id="toggle-search"src="./assets/images/search_icon.png" class="icon">
-    <div id="search-container" class="search-layer">      
-      <div class="topChar">検索</div>
-      <div>
-          <input id="input-search" type="text" class="searchword" inputmode="kana">
-          <img src="./assets/images/search_button.png" class="button">			
-      </div>
-      <div id="message" class="announceChar"></div>
-      <div id="users" class="rslt">
+    <img id="toggle-icon" src="./assets/images/search_icon.png" class="toggle-icon">
+    <div id="search" class="search">      
+      <div class="search-header">検索</div>
+      <img src="./assets/images/search_button.png" class="search-icon">	
+      <input id="search-input" type="text" class="search-input" inputmode="kana">      		
+      <div id="search-message" class="search-message"></div>
+      <div id="search-result" class="search-result">
       </div>
     </div>
   </body>

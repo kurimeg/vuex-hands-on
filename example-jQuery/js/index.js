@@ -5,15 +5,15 @@ $(function(){
       users = data.EmpInfo
     })
 
-  $('#search-container').hide()
+  $('#search').hide()
 
-  $('#input-search').change((event) => {
+  $('#search-input').change((event) => {
     const searchResult = searchUsers(users, event.target.value)
     renderUsers(searchResult)
   })
 
-  $('#toggle-search').click(() => {
-    $('#search-container').toggle()
+  $('#toggle-icon').click(() => {
+    $('#search').toggle()
   })
 
 })
@@ -30,11 +30,11 @@ function fetchUsers() {
 }
 
 function renderUsers(searchResult) {
-  $('#users').empty()
-  $('#message').text(searchResult.message)
+  $('#search-result').empty()
+  $('#search-message').text(searchResult.message)
   if(searchResult.filteredUsers.length > 0){
     searchResult.filteredUsers.forEach(user => {
-      $('#users').append(`<div>${user.EMP_NO} ${user.EMP_NM}</div>`)
+      $('#search-result').append(`<div>${user.EMP_NO} ${user.EMP_NM}</div>`)
     })
   }
 }
