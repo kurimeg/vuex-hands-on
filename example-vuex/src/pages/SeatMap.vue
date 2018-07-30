@@ -1,15 +1,15 @@
 <template>
   <div>
-    <dialog-emp-search/>
+    <dialog-users-search/>
   </div>
 </template>
 
 <script>
-import DialogEmpSearch from '@/components/DialogEmpSearch'
+import DialogUsersSearch from '@/components/DialogUsersSearch'
 
 export default {
   components: {
-    DialogEmpSearch
+    DialogUsersSearch
   }
 }
 </script>
