@@ -3,8 +3,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin-left: 8px;
+  margin-top: 8px;
   cursor: pointer;
 }
 .search {
@@ -16,13 +16,13 @@
   padding-bottom: 15px;
 }
 .search-header {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 53px;
   color: #ffffff;
   font-size: 20px;
 }
 .search-input {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 30px;
   width: 330px;
   height: 35px;
@@ -38,7 +38,7 @@
 .search-icon {
   position: absolute;
   margin-left: 35px;
-  margin-top: 13px;
+  margin-top: 23px;
   width: 30px;
   height: 30px;
 }
@@ -48,10 +48,18 @@ input:focus{
 button:focus{
   outline:none;
 }
-.message {
+.search-message {
   margin-left: 30px;
   margin-top: 15px;
   color: #ffffff;
   font-size: 18px;
   height: 30px;
+}
+.search-result {
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
 }
